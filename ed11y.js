@@ -433,7 +433,8 @@ if (window.location.href.endsWith("?ed11y")) {
       return broken_link_map[g];
     }
 
-    Ed11y.elements["linkinator"] = Ed11y.elements[key].concat(Array.from(root.querySelectorAll(retrieveBrokenLinks())));
+    Ed11y.elements["linkinator"] = [];
+    Ed11y.elements["linkinator"] = Ed11y.elements["linkinator"].concat(Array.from(root.querySelectorAll(retrieveBrokenLinks())));
 
     Ed11y.M.potentialBrokenLink = {
       title: 'This link might be broken',
