@@ -433,6 +433,8 @@ if (window.location.href.endsWith("?ed11y")) {
       return broken_link_map.get(g);
     };
 
+    Ed11y.elements['linkinator'] = [];
+
     Ed11y.roots.forEach(root => {
       Ed11y.elements['linkinator'] = Ed11y.elements['linkinator'].concat(Array.from(root.querySelectorAll(retrieveBrokenLinks())));
     });
