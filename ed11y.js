@@ -5,7 +5,7 @@ if (window.location.href.endsWith("?ed11y")) {
     checkRoots: '#s-lg-side-nav-content',
 
     // Ignore librarian profile boxes
-    ignoreElements: 'div[id^="s-lib-profile"]',
+    ignoreElements: 'div[id^="s-lib-profile"] *',
 
     customTests: 1
   });
