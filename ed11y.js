@@ -4,8 +4,8 @@ if (window.location.href.endsWith("?ed11y")) {
     // Define content regions
     checkRoots: '#s-lg-side-nav-content',
 
-    // Ignore librarian profile boxes
-    ignoreElements: 'div[id^="s-lib-profile"] *',
+    // Ignore librarian profile boxes and asset icons
+    ignoreElements: 'div[id^="s-lib-profile"] *, div[class="s-lg-icons pad-left-sm"] *',
 
     customTests: 1
   });
