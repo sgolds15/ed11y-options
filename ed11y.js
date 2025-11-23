@@ -463,11 +463,4 @@ if (window.location.href.endsWith("?ed11y")) {
 
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const internalLinks = document.querySelectorAll("a[href^='https://libraryguides.mcgill.ca/']");
-    internalLinks.forEach(link => {
-      link.setAttribute('href', link.href + '?ed11y');
-    });
-  });
-
 }
